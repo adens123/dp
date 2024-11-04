@@ -1,0 +1,29 @@
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: rebeccapurple;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    84% 34%,
+    100% 80%,
+    80% 100%,
+    28% 51%,
+    0% 80%,
+    11% 29%
+  );
+  transition: all 0.5s ease;
+}
+
+.container:hover {
+  clip-path: polygon(
+    0% 50%,
+    80% 0%,
+    84% 34%,
+    100% 80%,
+    80% 100%,
+    28% 51%,
+    0% 80%,
+    11% 29%
+  );
+}
