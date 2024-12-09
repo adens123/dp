@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+  background-color: #352c4f;
+}
+
+/* #a0244b */
+
+.container {
+  background-color: #fff;
+  width: 30%;
+  min-width: 370px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+.container p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.qrText {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a0244b;
+  border-radius: 5px;
+  outline: none;
+  margin: 15px 0 10px;
+}
+
+.imgBox {
+  width: 300px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+.imgBox.showQR {
+  max-height: 300px;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid #d1d1d1;
+}
+
+.qrImage {
+  width: 100%;
+}
+
+.generate {
+  color: #fff;
+  background-color: #a0244b;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0 20px;
+}
+
+.error {
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

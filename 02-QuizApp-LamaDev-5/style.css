@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", serif;
+  background-color: #46269a;
+  display: grid;
+  place-items: center;
+}
+
+/* #a64d87 */
+
+.container {
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.question {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.answer {
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.submit {
+  width: 100%;
+  height: 30px;
+  color: white;
+  background-color: #a64d87;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.result {
+  display: none;
+  text-align: center;
+}
+
+.result h1,
+.correct,
+.wrong,
+.score {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.result h1 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}
+
+.play {
+  color: #fff;
+  background-color: #a64d87;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

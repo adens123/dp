@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+  background-color: #48476f;
+}
+
+/* #bd575f */
+
+.container {
+  background-color: #fff;
+  width: 30%;
+  min-width: 370px;
+  border-radius: 5px;
+  padding: 25px 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container h1 {
+  font-size: 20px;
+}
+
+.qrText {
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 10px;
+  border: 1px solid #bd575f;
+  border-radius: 5px;
+  outline: none;
+}
+
+.imgBox {
+  width: 250px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.imgBox.showQR {
+  max-height: 250px;
+  border: 1px solid #d1d1d1;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+.qrImage {
+  width: 100%;
+}
+
+.generate {
+  font-size: 16px;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0 20px;
+  background-color: #bd575f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(5px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  75% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
