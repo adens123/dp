@@ -1,5 +1,5 @@
 const createBtn = document.querySelector(".createBtn");
-const notesContainer = document.querySelector(".notesContainer");
+const notesContainer = document.querySelector(".notes");
 
 const init = () => {
   notesContainer.innerHTML = localStorage.getItem("notes");
@@ -7,18 +7,15 @@ const init = () => {
 
 init();
 
-const createNote = () => {
-  createBtn.addEventListener("click", () => {
-    const note = document.createElement("p");
-    note.className = "note";
-    note.setAttribute("contenteditable", "true");
-    const img = document.createElement("img");
-    img.src = "./images/delete.png";
-    notesContainer.appendChild(note).appendChild(img);
-  });
-};
-
-createNote();
+createBtn.addEventListener("click", () => {
+  const note = document.createElement("p");
+  note.className = "note";
+  note.setAttribute("contenteditable", "true");
+  const img = document.createElement("img");
+  img.src = "./images/delete.png";
+  note.appendChild(img);
+  notesContainer.appendChild(note);
+});
 
 const updateStorage = () => {
   localStorage.setItem("notes", notesContainer.innerHTML);

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NotesApp 2024/12/08</title>
+    <title>QR Code Generator 2024/12/22</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
@@ -11,11 +11,12 @@
   </head>
   <body>
     <div class="container">
-      <h1><img src="./images/notes.png" alt="" />Notes</h1>
-      <button class="createBtn">
-        <img src="./images/edit.png" alt="" />Create Notes
-      </button>
-      <div class="notesContainer"></div>
+      <p>Enter your Text or URL</p>
+      <input type="text" class="inputField" placeholder="Text or URL" />
+      <div class="imgBox">
+        <img class="qrImg" src="" alt="" />
+      </div>
+      <button class="generateBtn">Generate QR code</button>
     </div>
     <script src="./index.js"></script>
   </body>

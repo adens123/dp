@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Permanent Marker", serif;
+  background-color: slateblue;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.monthName {
+  color: #fff;
+  background-color: orangered;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.dayName {
+  font-size: 20px;
+  color: darkgray;
+  margin: 10px 0;
+}
+
+.dayNumber {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.year {
+  font-size: 20px;
+  color: darkgray;
+  font-weight: 500;
+  margin: 10px 0;
+}
